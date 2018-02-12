@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="API Test Suite" parallel="classes" thread-count="6">
+
+    <test name="Get Tests" verbose="1" annotations="JDK">
+        <classes>
+            <class name="categories.GetTest"/>
+            <class name="products.GetTest"/>
+            <class name="services.GetTest"/>
+            <class name="stores.GetTest"/>
+            <class name="utilities.GetTest"/>
+        </classes>
+    </test>
+    <test name="Post Tests" verbose="1" annotations="JDK">
+        <classes>
+            <class name="products.PostTest"/>
+        </classes>
+    </test>
+</suite>
